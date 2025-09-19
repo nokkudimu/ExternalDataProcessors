@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="СписокНоменклатуры" id="1">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.СписокНоменклатуры</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СписокНоменклатурыКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокНоменклатурыКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокНоменклатурыРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="СписокНоменклатурыСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>СписокНоменклатуры</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокНоменклатурыСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="СписокНоменклатурыСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокНоменклатурыСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>СписокНоменклатуры</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокНоменклатурыСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СписокНоменклатурыСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокНоменклатурыУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>СписокНоменклатуры</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокНоменклатурыУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СписокНоменклатурыУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СписокНоменклатурыВыбор</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="СписокНоменклатурыНомерСтроки" id="14">
+					<DataPath>Объект.СписокНоменклатуры.LineNumber</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокНоменклатурыНомерСтрокиКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="СписокНоменклатурыНомерСтрокиРасширеннаяПодсказка" id="16"/>
+				</LabelField>
+				<CheckBoxField name="СписокНоменклатурыВыбрано" id="43">
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СписокНоменклатурыВыбраноКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="СписокНоменклатурыВыбраноРасширеннаяПодсказка" id="45"/>
+				</CheckBoxField>
+				<InputField name="СписокНоменклатурыШтрихкод" id="17">
+					<DataPath>Объект.СписокНоменклатуры.Штрихкод</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СписокНоменклатурыШтрихкодКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="СписокНоменклатурыШтрихкодРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="СписокНоменклатурыАртикул" id="20">
+					<DataPath>Объект.СписокНоменклатуры.Артикул</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СписокНоменклатурыАртикулКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СписокНоменклатурыАртикулРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="СписокНоменклатурыНоменклатура" id="23">
+					<DataPath>Объект.СписокНоменклатуры.Номенклатура</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СписокНоменклатурыНоменклатураКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СписокНоменклатурыНоменклатураРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="СписокНоменклатурыХарактеристика" id="26">
+					<DataPath>Объект.СписокНоменклатуры.Характеристика</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СписокНоменклатурыХарактеристикаКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="СписокНоменклатурыХарактеристикаРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="СписокНоменклатурыКоличество" id="29">
+					<DataPath>Объект.СписокНоменклатуры.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СписокНоменклатурыКоличествоКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="СписокНоменклатурыКоличествоРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="СписокНоменклатурыЕдиницаИзмерения" id="32">
+					<DataPath>Объект.СписокНоменклатуры.ЕдиницаИзмерения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СписокНоменклатурыЕдиницаИзмеренияКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="СписокНоменклатурыЕдиницаИзмеренияРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="СписокНоменклатурыКоличествоБрака" id="35">
+					<DataPath>Объект.СписокНоменклатуры.КоличествоБрака</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СписокНоменклатурыКоличествоБракаКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="СписокНоменклатурыКоличествоБракаРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="СписокНоменклатурыПричинаБрака" id="38">
+					<DataPath>Объект.СписокНоменклатуры.ПричинаБрака</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СписокНоменклатурыПричинаБракаКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="СписокНоменклатурыПричинаБракаРасширеннаяПодсказка" id="40"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.РабочееМестоКладовщикаОбновленное</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+</Form>

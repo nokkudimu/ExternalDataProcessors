@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Группа4" id="67">
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="68"/>
+			<ChildItems>
+				<Page name="Группа5" id="69">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расхождения</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="70"/>
+					<ChildItems>
+						<UsualGroup name="Группа3" id="51">
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="52"/>
+							<ChildItems>
+								<UsualGroup name="Группа1" id="41">
+									<Group>Vertical</Group>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="42"/>
+									<ChildItems>
+										<InputField name="РасходникФСР" id="1">
+											<DataPath>Объект.РасходникФСР</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Расходник</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="РасходникФСРКонтекстноеМеню" id="2"/>
+											<ExtendedTooltip name="РасходникФСРРасширеннаяПодсказка" id="3"/>
+										</InputField>
+										<InputField name="ПриходникФСР" id="4">
+											<DataPath>Объект.ПриходникФСР</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Приходник</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПриходникФСРКонтекстноеМеню" id="5"/>
+											<ExtendedTooltip name="ПриходникФСРРасширеннаяПодсказка" id="6"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа7" id="76">
+									<Group>Vertical</Group>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="77"/>
+									<ChildItems>
+										<InputField name="ПеремещениеФСР" id="38">
+											<DataPath>Объект.ПеремещениеФСР</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Перемещение</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПеремещениеФСРКонтекстноеМеню" id="39"/>
+											<ExtendedTooltip name="ПеремещениеФСРРасширеннаяПодсказка" id="40"/>
+										</InputField>
+										<InputField name="АктОРасхожденииФСР" id="53">
+											<DataPath>Объект.АктОРасхожденииФСР</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Акт о расхождении</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="АктОРасхожденииФСРКонтекстноеМеню" id="54"/>
+											<ExtendedTooltip name="АктОРасхожденииФСРРасширеннаяПодсказка" id="55"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа11" id="106">
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="107"/>
+							<ChildItems>
+								<UsualGroup name="Группа12" id="108">
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="109"/>
+									<ChildItems>
+										<Button name="ВыбратьВсе" id="110">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ВыбратьВсе</CommandName>
+											<ExtendedTooltip name="ВыбратьВсеРасширеннаяПодсказка" id="111"/>
+										</Button>
+										<Button name="УбратьВсе" id="112">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.УбратьВсе</CommandName>
+											<ExtendedTooltip name="УбратьВсеРасширеннаяПодсказка" id="113"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="РазногласияФСР" id="7">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.РазногласияФСР</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="РазногласияФСРКонтекстноеМеню" id="8"/>
+							<AutoCommandBar name="РазногласияФСРКоманднаяПанель" id="9">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="РазногласияФСРРасширеннаяПодсказка" id="10"/>
+							<SearchStringAddition name="РазногласияФСРСтрокаПоиска" id="11">
+								<AdditionSource>
+									<Item>РазногласияФСР</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РазногласияФСРСтрокаПоискаКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="РазногласияФСРСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РазногласияФСРСостояниеПросмотра" id="14">
+								<AdditionSource>
+									<Item>РазногласияФСР</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РазногласияФСРСостояниеПросмотраКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="РазногласияФСРСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РазногласияФСРУправлениеПоиском" id="17">
+								<AdditionSource>
+									<Item>РазногласияФСР</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="РазногласияФСРУправлениеПоискомКонтекстноеМеню" id="18"/>
+								<ExtendedTooltip name="РазногласияФСРУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">РазногласияФСРПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="РазногласияФСРНомерСтроки" id="20">
+									<DataPath>Объект.РазногласияФСР.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РазногласияФСРНомерСтрокиКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="РазногласияФСРНомерСтрокиРасширеннаяПодсказка" id="22"/>
+								</LabelField>
+								<CheckBoxField name="РазногласияФСРДвижения" id="103">
+									<DataPath>Объект.РазногласияФСР.Движения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="РазногласияФСРДвиженияКонтекстноеМеню" id="104"/>
+									<ExtendedTooltip name="РазногласияФСРДвиженияРасширеннаяПодсказка" id="105"/>
+								</CheckBoxField>
+								<InputField name="РазногласияФСРАртикул" id="23">
+									<DataPath>Объект.РазногласияФСР.Артикул</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РазногласияФСРАртикулКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="РазногласияФСРАртикулРасширеннаяПодсказка" id="25"/>
+								</InputField>
+								<InputField name="РазногласияФСРШтрихкод" id="26">
+									<DataPath>Объект.РазногласияФСР.Штрихкод</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РазногласияФСРШтрихкодКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="РазногласияФСРШтрихкодРасширеннаяПодсказка" id="28"/>
+								</InputField>
+								<InputField name="РазногласияФСРНоменклатура" id="29">
+									<DataPath>Объект.РазногласияФСР.Номенклатура</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РазногласияФСРНоменклатураКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="РазногласияФСРНоменклатураРасширеннаяПодсказка" id="31"/>
+								</InputField>
+								<InputField name="РазногласияФСРХарактеристика" id="35">
+									<DataPath>Объект.РазногласияФСР.Характеристика</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РазногласияФСРХарактеристикаКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="РазногласияФСРХарактеристикаРасширеннаяПодсказка" id="37"/>
+								</InputField>
+								<InputField name="РазногласияФСРКоличество" id="32">
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РазногласияФСРКоличествоКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="РазногласияФСРКоличествоРасширеннаяПодсказка" id="34"/>
+								</InputField>
+								<InputField name="РазногласияФСРНедостачи" id="84">
+									<DataPath>Объект.РазногласияФСР.Недостачи</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РазногласияФСРНедостачиКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="РазногласияФСРНедостачиРасширеннаяПодсказка" id="86"/>
+								</InputField>
+								<InputField name="РазногласияФСРИзлишки" id="87">
+									<DataPath>Объект.РазногласияФСР.Излишки</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РазногласияФСРИзлишкиКонтекстноеМеню" id="88"/>
+									<ExtendedTooltip name="РазногласияФСРИзлишкиРасширеннаяПодсказка" id="89"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="Группа6" id="71">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Движения</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="72"/>
+					<ChildItems>
+						<UsualGroup name="Группа9" id="80">
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="81"/>
+							<ChildItems>
+								<UsualGroup name="Группа2" id="43">
+									<Group>Vertical</Group>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="44"/>
+									<ChildItems>
+										<InputField name="Период" id="62">
+											<DataPath>Период</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПериодКонтекстноеМеню" id="63"/>
+											<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="64"/>
+										</InputField>
+										<InputField name="ТестСкладФСР" id="97">
+											<DataPath>Объект.ТестСкладФСР</DataPath>
+											<Visible>false</Visible>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТестСкладФСРКонтекстноеМеню" id="98"/>
+											<ExtendedTooltip name="ТестСкладФСРРасширеннаяПодсказка" id="99"/>
+										</InputField>
+										<InputField name="СписокСкладов" id="100">
+											<DataPath>СписокСкладов</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="СписокСкладовКонтекстноеМеню" id="101"/>
+											<ExtendedTooltip name="СписокСкладовРасширеннаяПодсказка" id="102"/>
+										</InputField>
+										<InputField name="ПоставщикФСР" id="45">
+											<DataPath>Объект.ПоставщикФСР</DataPath>
+											<Visible>false</Visible>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Поставщик</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПоставщикФСРКонтекстноеМеню" id="46"/>
+											<ExtendedTooltip name="ПоставщикФСРРасширеннаяПодсказка" id="47"/>
+										</InputField>
+										<InputField name="ПолучательФСР" id="48">
+											<DataPath>Объект.ПолучательФСР</DataPath>
+											<Visible>false</Visible>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Получатель</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПолучательФСРКонтекстноеМеню" id="49"/>
+											<ExtendedTooltip name="ПолучательФСРРасширеннаяПодсказка" id="50"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа8" id="78">
+									<Group>Vertical</Group>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="79"/>
+									<ChildItems>
+										<InputField name="НоменклатураФСР" id="56">
+											<DataPath>НоменклатураФСР</DataPath>
+											<Visible>false</Visible>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Номенклатура</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="НоменклатураФСРКонтекстноеМеню" id="57"/>
+											<ExtendedTooltip name="НоменклатураФСРРасширеннаяПодсказка" id="58"/>
+										</InputField>
+										<InputField name="ХарактеристикаФСР" id="59">
+											<DataPath>ХарактеристикаФСР</DataPath>
+											<Visible>false</Visible>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Характеристика</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ХарактеристикаФСРКонтекстноеМеню" id="60"/>
+											<ExtendedTooltip name="ХарактеристикаФСРРасширеннаяПодсказка" id="61"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа10" id="93">
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="94"/>
+							<ChildItems>
+								<CheckBoxField name="ВсяРазличающаясяНоменклатура" id="90">
+									<DataPath>ВсяРазличающаясяНоменклатура</DataPath>
+									<Visible>false</Visible>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ВсяРазличающаясяНоменклатураКонтекстноеМеню" id="91"/>
+									<ExtendedTooltip name="ВсяРазличающаясяНоменклатураРасширеннаяПодсказка" id="92"/>
+								</CheckBoxField>
+								<Button name="ПоказатьДвижение" id="82">
+									<Type>UsualButton</Type>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<CommandName>Form.Command.ПоказатьДвижение</CommandName>
+									<ExtendedTooltip name="ПоказатьДвижениеРасширеннаяПодсказка" id="83"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<SpreadSheetDocumentField name="ДвижениеТовара" id="73">
+							<DataPath>ДвижениеТовара</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="ДвижениеТовараКонтекстноеМеню" id="74"/>
+							<ExtendedTooltip name="ДвижениеТовараРасширеннаяПодсказка" id="75"/>
+							<Events>
+								<Event name="Selection">ДвижениеТовараВыбор</Event>
+							</Events>
+						</SpreadSheetDocumentField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ОтчетОРазногласиях</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="НоменклатураФСР" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура ФСР</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ХарактеристикаФСР" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Характеристика ФСР</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ХарактеристикиНоменклатуры</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Период" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ДвижениеТовара" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Движение товара</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВсяРазличающаясяНоменклатура" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вся различающаяся номенклатура</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокСкладов" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список складов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПоказатьДвижение" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать движение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать движение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьДвижение</Action>
+		</Command>
+		<Command name="ВыбратьВсе" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьВсе</Action>
+		</Command>
+		<Command name="УбратьВсе" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Убрать все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Убрать все</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УбратьВсе</Action>
+		</Command>
+	</Commands>
+</Form>

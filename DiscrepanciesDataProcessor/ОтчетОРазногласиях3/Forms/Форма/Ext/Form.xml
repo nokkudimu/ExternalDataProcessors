@@ -1,0 +1,550 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа3" id="77">
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="78"/>
+			<ChildItems>
+				<UsualGroup name="Группа1" id="65">
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="66"/>
+					<ChildItems>
+						<InputField name="Период" id="1">
+							<DataPath>Объект.Период</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<Button name="НайтиРазногласия" id="60">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.НайтиРазногласия</CommandName>
+							<ExtendedTooltip name="НайтиРазногласияРасширеннаяПодсказка" id="61"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа2" id="75">
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="76"/>
+					<ChildItems>
+						<InputField name="Поставщик" id="69">
+							<DataPath>Объект.Поставщик</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПоставщикКонтекстноеМеню" id="70"/>
+							<ExtendedTooltip name="ПоставщикРасширеннаяПодсказка" id="71"/>
+						</InputField>
+						<InputField name="Получатель" id="72">
+							<DataPath>Объект.Получатель</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПолучательКонтекстноеМеню" id="73"/>
+							<ExtendedTooltip name="ПолучательРасширеннаяПодсказка" id="74"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="Декорация1" id="89">
+			<Width>165</Width>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<TextColor>style:BorderColor</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</v8:content>
+				</v8:item>
+			</Title>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="90"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="91"/>
+		</LabelDecoration>
+		<Table name="ОтчетОРазногласиях" id="4">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ОтчетОРазногласиях</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ОтчетОРазногласияхКонтекстноеМеню" id="5"/>
+			<AutoCommandBar name="ОтчетОРазногласияхКоманднаяПанель" id="6"/>
+			<ExtendedTooltip name="ОтчетОРазногласияхРасширеннаяПодсказка" id="7"/>
+			<SearchStringAddition name="ОтчетОРазногласияхСтрокаПоиска" id="8">
+				<AdditionSource>
+					<Item>ОтчетОРазногласиях</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОтчетОРазногласияхСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ОтчетОРазногласияхСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ОтчетОРазногласияхСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>ОтчетОРазногласиях</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОтчетОРазногласияхСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ОтчетОРазногласияхСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ОтчетОРазногласияхУправлениеПоиском" id="14">
+				<AdditionSource>
+					<Item>ОтчетОРазногласиях</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ОтчетОРазногласияхУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ОтчетОРазногласияхУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+		</Table>
+		<Table name="ОтчетОРазногласиях1" id="17">
+			<ReadOnly>true</ReadOnly>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ОтчетОРазногласиях</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ОтчетОРазногласиях1КонтекстноеМеню" id="18"/>
+			<AutoCommandBar name="ОтчетОРазногласиях1КоманднаяПанель" id="19">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ВОЗР" id="87">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ВОЗР</CommandName>
+						<ExtendedTooltip name="ВОЗРРасширеннаяПодсказка" id="88"/>
+					</Button>
+					<Button name="УБЫВ" id="85">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.УБЫВ</CommandName>
+						<ExtendedTooltip name="УБЫВРасширеннаяПодсказка" id="86"/>
+					</Button>
+					<Button name="ОтчетОРазногласиях1ПометитьНаУдалениеВыделенные" id="95">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Command.ПометитьНаУдалениеВыделенные</CommandName>
+						<Picture>
+							<xr:Ref>CommonPicture.КрасныйКрест</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ОтчетОРазногласиях1ПометитьНаУдалениеВыделенныеРасширеннаяПодсказка" id="96"/>
+					</Button>
+					<Button name="ОтчетОРазногласиях1ПровестиВыделенные" id="108">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Command.ПровестиВыделенные</CommandName>
+						<Picture>
+							<xr:Ref>CommonPicture.ЗакрытьЗаявкуГосИС</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ОтчетОРазногласиях1ПровестиВыделенныеРасширеннаяПодсказка" id="109"/>
+					</Button>
+					<Button name="ОтчетОРазногласиях1ЭкспортВExcel" id="100">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Command.ЭкспортВExcel</CommandName>
+						<Picture>
+							<xr:Ref>CommonPicture.ПереносДанныхУспехЗагрузка</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Вывести табличный документ</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ОтчетОРазногласиях1ЭкспортВExcelРасширеннаяПодсказка" id="101"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ОтчетОРазногласиях1РасширеннаяПодсказка" id="20"/>
+			<SearchStringAddition name="ОтчетОРазногласиях1СтрокаПоиска" id="21">
+				<AdditionSource>
+					<Item>ОтчетОРазногласиях1</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОтчетОРазногласиях1СтрокаПоискаКонтекстноеМеню" id="22"/>
+				<ExtendedTooltip name="ОтчетОРазногласиях1СтрокаПоискаРасширеннаяПодсказка" id="23"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ОтчетОРазногласиях1СостояниеПросмотра" id="24">
+				<AdditionSource>
+					<Item>ОтчетОРазногласиях1</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОтчетОРазногласиях1СостояниеПросмотраКонтекстноеМеню" id="25"/>
+				<ExtendedTooltip name="ОтчетОРазногласиях1СостояниеПросмотраРасширеннаяПодсказка" id="26"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ОтчетОРазногласиях1УправлениеПоиском" id="27">
+				<AdditionSource>
+					<Item>ОтчетОРазногласиях1</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ОтчетОРазногласиях1УправлениеПоискомКонтекстноеМеню" id="28"/>
+				<ExtendedTooltip name="ОтчетОРазногласиях1УправлениеПоискомРасширеннаяПодсказка" id="29"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ОтчетОРазногласиях1Выбор</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ОтчетОРазногласиях1НомерСтроки" id="30">
+					<DataPath>Объект.ОтчетОРазногласиях.LineNumber</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОтчетОРазногласиях1НомерСтрокиКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ОтчетОРазногласиях1НомерСтрокиРасширеннаяПодсказка" id="32"/>
+				</LabelField>
+				<InputField name="ОтчетОРазногласиях1Дата" id="92">
+					<DataPath>Объект.ОтчетОРазногласиях.Дата</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>15</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтчетОРазногласиях1ДатаКонтекстноеМеню" id="93"/>
+					<ExtendedTooltip name="ОтчетОРазногласиях1ДатаРасширеннаяПодсказка" id="94"/>
+				</InputField>
+				<InputField name="ОтчетОРазногласиях1Перемещение" id="62">
+					<DataPath>Объект.ОтчетОРазногласиях.Перемещение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтчетОРазногласиях1ПеремещениеКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ОтчетОРазногласиях1ПеремещениеРасширеннаяПодсказка" id="64"/>
+				</InputField>
+				<CheckBoxField name="ОтчетОРазногласиях1ПеремещениеУдалено" id="97">
+					<DataPath>Объект.ОтчетОРазногласиях.ПеремещениеУдалено</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОтчетОРазногласиях1ПеремещениеУдаленоКонтекстноеМеню" id="98"/>
+					<ExtendedTooltip name="ОтчетОРазногласиях1ПеремещениеУдаленоРасширеннаяПодсказка" id="99"/>
+				</CheckBoxField>
+				<InputField name="ОтчетОРазногласиях1РасходныйОрдер" id="33">
+					<DataPath>Объект.ОтчетОРазногласиях.РасходныйОрдер</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтчетОРазногласиях1РасходныйОрдерКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="ОтчетОРазногласиях1РасходныйОрдерРасширеннаяПодсказка" id="35"/>
+				</InputField>
+				<InputField name="ОтчетОРазногласиях1ПриходныйОрдер" id="36">
+					<DataPath>Объект.ОтчетОРазногласиях.ПриходныйОрдер</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтчетОРазногласиях1ПриходныйОрдерКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ОтчетОРазногласиях1ПриходныйОрдерРасширеннаяПодсказка" id="38"/>
+				</InputField>
+				<InputField name="ОтчетОРазногласиях1АктОРасхождении" id="39">
+					<DataPath>Объект.ОтчетОРазногласиях.АктОРасхождении</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтчетОРазногласиях1АктОРасхожденииКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="ОтчетОРазногласиях1АктОРасхожденииРасширеннаяПодсказка" id="41"/>
+				</InputField>
+				<InputField name="ОтчетОРазногласиях1Поставщик" id="42">
+					<DataPath>Объект.ОтчетОРазногласиях.Поставщик</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтчетОРазногласиях1ПоставщикКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="ОтчетОРазногласиях1ПоставщикРасширеннаяПодсказка" id="44"/>
+				</InputField>
+				<InputField name="ОтчетОРазногласиях1Получатель" id="45">
+					<DataPath>Объект.ОтчетОРазногласиях.Получатель</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтчетОРазногласиях1ПолучательКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="ОтчетОРазногласиях1ПолучательРасширеннаяПодсказка" id="47"/>
+				</InputField>
+				<InputField name="ОтчетОРазногласиях1Недостача" id="48">
+					<DataPath>Объект.ОтчетОРазногласиях.Недостача</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтчетОРазногласиях1НедостачаКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="ОтчетОРазногласиях1НедостачаРасширеннаяПодсказка" id="50"/>
+				</InputField>
+				<InputField name="ОтчетОРазногласиях1Излишки" id="51">
+					<DataPath>Объект.ОтчетОРазногласиях.Излишки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтчетОРазногласиях1ИзлишкиКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="ОтчетОРазногласиях1ИзлишкиРасширеннаяПодсказка" id="53"/>
+				</InputField>
+				<InputField name="ОтчетОРазногласиях1Разность" id="79">
+					<DataPath>Объект.ОтчетОРазногласиях.Разность</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтчетОРазногласиях1РазностьКонтекстноеМеню" id="80"/>
+					<ExtendedTooltip name="ОтчетОРазногласиях1РазностьРасширеннаяПодсказка" id="81"/>
+				</InputField>
+				<CheckBoxField name="ОтчетОРазногласиях1Повтор" id="82">
+					<DataPath>Объект.ОтчетОРазногласиях.Повтор</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОтчетОРазногласиях1ПовторКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="ОтчетОРазногласиях1ПовторРасширеннаяПодсказка" id="84"/>
+				</CheckBoxField>
+				<CheckBoxField name="ОтчетОРазногласиях1ПриходПроведен" id="102">
+					<DataPath>Объект.ОтчетОРазногласиях.ПриходПроведен</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОтчетОРазногласиях1ПриходПроведенКонтекстноеМеню" id="103"/>
+					<ExtendedTooltip name="ОтчетОРазногласиях1ПриходПроведенРасширеннаяПодсказка" id="104"/>
+				</CheckBoxField>
+				<CheckBoxField name="ОтчетОРазногласиях1РасходПроведен" id="105">
+					<DataPath>Объект.ОтчетОРазногласиях.РасходПроведен</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОтчетОРазногласиях1РасходПроведенКонтекстноеМеню" id="106"/>
+					<ExtendedTooltip name="ОтчетОРазногласиях1РасходПроведенРасширеннаяПодсказка" id="107"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ОтчетОРазногласиях</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ОтчетОРазногласиях1Перемещение</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОтчетОРазногласиях1РасходныйОрдер</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОтчетОРазногласиях1ПриходныйОрдер</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОтчетОРазногласиях1АктОРасхождении</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОтчетОРазногласиях1Поставщик</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОтчетОРазногласиях1Получатель</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОтчетОРазногласиях1Недостача</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОтчетОРазногласиях1Излишки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОтчетОРазногласиях1Разность</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОтчетОРазногласиях1НомерСтроки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОтчетОРазногласиях1Дата</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ОтчетОРазногласиях.Повтор</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FFCA9C</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ОтчетОРазногласиях1Перемещение</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ОтчетОРазногласиях.ПеремещениеУдалено</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ОтчетОРазногласиях1ПриходныйОрдер</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ОтчетОРазногласиях.ПриходПроведен</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ОтчетОРазногласиях1РасходныйОрдер</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ОтчетОРазногласиях.РасходПроведен</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ОтчетОРазногласиях1Перемещение</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ОтчетОРазногласиях.ПеремещениеПроведено</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ОтчетОРазногласиях.ПеремещениеУдалено</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#0077FF</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="НайтиРазногласия" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти разногласия</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти разногласия</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НайтиРазногласия</Action>
+		</Command>
+		<Command name="УБЫВ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сортировать по убыв.</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>УБЫВ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.СортироватьСтрокиПоУбыванию</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СортироватьТабЧасть</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ВОЗР" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сортировать по возр.</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ВОЗР</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.СортироватьСтрокиПоВозрастанию</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СортироватьТабЧасть</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПометитьНаУдалениеВыделенные" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометить на удаление выделенные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометить на удаление выделенные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПометитьНаУдалениеВыделенные</Action>
+		</Command>
+		<Command name="ЭкспортВExcel" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Экспорт в Еxcel</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Экспорт в excel</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЭкспортВExcel</Action>
+		</Command>
+		<Command name="ПровестиВыделенные" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Провести выделенные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Провести выделенные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПровестиВыделенные</Action>
+		</Command>
+	</Commands>
+</Form>

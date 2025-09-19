@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="Внимание" id="1">
+			<Width>60</Width>
+			<Font faceName="Arial" height="18" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отсканированный товар отличается от ожидаемого.</v8:content>
+				</v8:item>
+			</Title>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<ContextMenu name="ВниманиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ВниманиеРасширеннаяПодсказка" id="3"/>
+		</LabelDecoration>
+		<Table name="ОтличающаясяНоменклатура" id="4">
+			<ReadOnly>true</ReadOnly>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ОтличающаясяНоменклатура</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ОтличающаясяНоменклатураКонтекстноеМеню" id="5"/>
+			<AutoCommandBar name="ОтличающаясяНоменклатураКоманднаяПанель" id="6">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ОтличающаясяНоменклатураРасширеннаяПодсказка" id="7"/>
+			<SearchStringAddition name="ОтличающаясяНоменклатураСтрокаПоиска" id="8">
+				<AdditionSource>
+					<Item>ОтличающаясяНоменклатура</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОтличающаясяНоменклатураСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ОтличающаясяНоменклатураСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ОтличающаясяНоменклатураСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>ОтличающаясяНоменклатура</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОтличающаясяНоменклатураСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ОтличающаясяНоменклатураСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ОтличающаясяНоменклатураУправлениеПоиском" id="14">
+				<AdditionSource>
+					<Item>ОтличающаясяНоменклатура</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ОтличающаясяНоменклатураУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ОтличающаясяНоменклатураУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ОтличающаясяНоменклатураНомерСтроки" id="17">
+					<DataPath>Объект.ОтличающаясяНоменклатура.LineNumber</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОтличающаясяНоменклатураНомерСтрокиКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ОтличающаясяНоменклатураНомерСтрокиРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+				<InputField name="ОтличающаясяНоменклатураНоменклатура" id="20">
+					<DataPath>Объект.ОтличающаясяНоменклатура.Номенклатура</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтличающаясяНоменклатураНоменклатураКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ОтличающаясяНоменклатураНоменклатураРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="ОтличающаясяНоменклатураХарактеристика" id="23">
+					<DataPath>Объект.ОтличающаясяНоменклатура.Характеристика</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтличающаясяНоменклатураХарактеристикаКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ОтличающаясяНоменклатураХарактеристикаРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ОтличающаясяНоменклатураИзлишек" id="26">
+					<DataPath>Объект.ОтличающаясяНоменклатура.Излишек</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтличающаясяНоменклатураИзлишекКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ОтличающаясяНоменклатураИзлишекРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ОтличающаясяНоменклатураНедостача" id="29">
+					<DataPath>Объект.ОтличающаясяНоменклатура.Недостача</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтличающаясяНоменклатураНедостачаКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ОтличающаясяНоменклатураНедостачаРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ОтличающаясяНоменклатураКоличествоБрака" id="32">
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтличающаясяНоменклатураКоличествоБракаКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ОтличающаясяНоменклатураКоличествоБракаРасширеннаяПодсказка" id="34"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="Группа1" id="35">
+			<HorizontalStretch>true</HorizontalStretch>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="36"/>
+			<ChildItems>
+				<Button name="Подтвердить" id="37">
+					<Type>UsualButton</Type>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<CommandName>Form.Command.Подтвердить</CommandName>
+					<BackColor>#9CFFA4</BackColor>
+					<ExtendedTooltip name="ПодтвердитьРасширеннаяПодсказка" id="38"/>
+				</Button>
+				<Button name="Отменить" id="39">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<Width>3</Width>
+					<CommandName>Form.Command.Отменить</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.АннулироватьЗаявкуГосИС</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ОтменитьРасширеннаяПодсказка" id="40"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.РабочееМестоКладовщикаОбновленное</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Подтвердить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подтвердить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подтвердить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Подтвердить</Action>
+		</Command>
+		<Command name="Отменить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отменить</Action>
+		</Command>
+	</Commands>
+</Form>

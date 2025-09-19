@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="ExternalEvent">ВнешнееСобытие</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ОжидаемаяНоменклатура" id="1">
+			<TitleLocation>Top</TitleLocation>
+			<ReadOnly>true</ReadOnly>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ОжидаемаяНоменклатура</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ОжидаемаяНоменклатураКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ОжидаемаяНоменклатураКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ОжидаемаяНоменклатураРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ОжидаемаяНоменклатураСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ОжидаемаяНоменклатура</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОжидаемаяНоменклатураСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ОжидаемаяНоменклатураСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ОжидаемаяНоменклатураСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ОжидаемаяНоменклатура</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОжидаемаяНоменклатураСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ОжидаемаяНоменклатураСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ОжидаемаяНоменклатураУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ОжидаемаяНоменклатура</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ОжидаемаяНоменклатураУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ОжидаемаяНоменклатураУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ОжидаемаяНоменклатураВыбор</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ОжидаемаяНоменклатураНомерСтроки" id="14">
+					<DataPath>Объект.ОжидаемаяНоменклатура.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОжидаемаяНоменклатураНомерСтрокиКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ОжидаемаяНоменклатураНомерСтрокиРасширеннаяПодсказка" id="16"/>
+				</LabelField>
+				<InputField name="ОжидаемаяНоменклатураШтрихкод" id="17">
+					<DataPath>Объект.ОжидаемаяНоменклатура.Штрихкод</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОжидаемаяНоменклатураШтрихкодКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ОжидаемаяНоменклатураШтрихкодРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="ОжидаемаяНоменклатураАртикул" id="20">
+					<DataPath>Объект.ОжидаемаяНоменклатура.Артикул</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОжидаемаяНоменклатураАртикулКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ОжидаемаяНоменклатураАртикулРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="ОжидаемаяНоменклатураНоменклатура" id="23">
+					<DataPath>Объект.ОжидаемаяНоменклатура.Номенклатура</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОжидаемаяНоменклатураНоменклатураКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ОжидаемаяНоменклатураНоменклатураРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ОжидаемаяНоменклатураХарактеристика" id="26">
+					<DataPath>Объект.ОжидаемаяНоменклатура.Характеристика</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОжидаемаяНоменклатураХарактеристикаКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ОжидаемаяНоменклатураХарактеристикаРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ОжидаемаяНоменклатураКоличество" id="29">
+					<DataPath>Объект.ОжидаемаяНоменклатура.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОжидаемаяНоменклатураКоличествоКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ОжидаемаяНоменклатураКоличествоРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ОжидаемаяНоменклатураЕдиницаИзмерения" id="32">
+					<DataPath>Объект.ОжидаемаяНоменклатура.ЕдиницаИзмерения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОжидаемаяНоменклатураЕдиницаИзмеренияКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ОжидаемаяНоменклатураЕдиницаИзмеренияРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ОжидаемаяНоменклатураКоличествоБрака" id="35">
+					<DataPath>Объект.ОжидаемаяНоменклатура.КоличествоБрака</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОжидаемаяНоменклатураКоличествоБракаКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ОжидаемаяНоменклатураКоличествоБракаРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="ОжидаемаяНоменклатураПричинаБрака" id="38">
+					<DataPath>Объект.ОжидаемаяНоменклатура.ПричинаБрака</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОжидаемаяНоменклатураПричинаБракаКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ОжидаемаяНоменклатураПричинаБракаРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="ОжидаемаяНоменклатураПеремещениеТоваров" id="41">
+					<DataPath>Объект.ОжидаемаяНоменклатура.ПеремещениеТоваров</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОжидаемаяНоменклатураПеремещениеТоваровКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ОжидаемаяНоменклатураПеремещениеТоваровРасширеннаяПодсказка" id="43"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Table name="ОтсканированнаяНоменклатура" id="44">
+			<TitleLocation>Top</TitleLocation>
+			<HorizontalScrollBar>UseAlways</HorizontalScrollBar>
+			<VerticalScrollBar>UseAlways</VerticalScrollBar>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ОтсканированнаяНоменклатура</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ОтсканированнаяНоменклатураКонтекстноеМеню" id="45"/>
+			<AutoCommandBar name="ОтсканированнаяНоменклатураКоманднаяПанель" id="46">
+				<ChildItems>
+					<Button name="ОтсканированнаяНоменклатураПодтвердитьПриемТоваров" id="90">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПодтвердитьПриемТоваров</CommandName>
+						<BackColor>#98FFAE</BackColor>
+						<ExtendedTooltip name="ОтсканированнаяНоменклатураПодтвердитьПриемТоваровРасширеннаяПодсказка" id="91"/>
+					</Button>
+					<Button name="ОтсканированнаяНоменклатураСкопироватьСписокОжидаемойНоменклатуры" id="84">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СкопироватьСписокОжидаемойНоменклатуры</CommandName>
+						<ExtendedTooltip name="ОтсканированнаяНоменклатураСкопироватьСписокОжидаемойНоменклатурыРасширеннаяПодсказка" id="85"/>
+					</Button>
+					<Button name="ОтсканированнаяНоменклатураЗаполнитьПричинуБрака" id="86">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьПричинуБрака</CommandName>
+						<ExtendedTooltip name="ОтсканированнаяНоменклатураЗаполнитьПричинуБракаРасширеннаяПодсказка" id="87"/>
+					</Button>
+					<Button name="ОтсканированнаяНоменклатураЗаполнитьКоличествоБрака" id="88">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьКоличествоБрака</CommandName>
+						<ExtendedTooltip name="ОтсканированнаяНоменклатураЗаполнитьКоличествоБракаРасширеннаяПодсказка" id="89"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ОтсканированнаяНоменклатураРасширеннаяПодсказка" id="47"/>
+			<SearchStringAddition name="ОтсканированнаяНоменклатураСтрокаПоиска" id="48">
+				<AdditionSource>
+					<Item>ОтсканированнаяНоменклатура</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОтсканированнаяНоменклатураСтрокаПоискаКонтекстноеМеню" id="49"/>
+				<ExtendedTooltip name="ОтсканированнаяНоменклатураСтрокаПоискаРасширеннаяПодсказка" id="50"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ОтсканированнаяНоменклатураСостояниеПросмотра" id="51">
+				<AdditionSource>
+					<Item>ОтсканированнаяНоменклатура</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОтсканированнаяНоменклатураСостояниеПросмотраКонтекстноеМеню" id="52"/>
+				<ExtendedTooltip name="ОтсканированнаяНоменклатураСостояниеПросмотраРасширеннаяПодсказка" id="53"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ОтсканированнаяНоменклатураУправлениеПоиском" id="54">
+				<AdditionSource>
+					<Item>ОтсканированнаяНоменклатура</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ОтсканированнаяНоменклатураУправлениеПоискомКонтекстноеМеню" id="55"/>
+				<ExtendedTooltip name="ОтсканированнаяНоменклатураУправлениеПоискомРасширеннаяПодсказка" id="56"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ОтсканированнаяНоменклатураНомерСтроки" id="57">
+					<DataPath>Объект.ОтсканированнаяНоменклатура.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОтсканированнаяНоменклатураНомерСтрокиКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="ОтсканированнаяНоменклатураНомерСтрокиРасширеннаяПодсказка" id="59"/>
+				</LabelField>
+				<InputField name="ОтсканированнаяНоменклатураШтрихкод" id="60">
+					<DataPath>Объект.ОтсканированнаяНоменклатура.Штрихкод</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтсканированнаяНоменклатураШтрихкодКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="ОтсканированнаяНоменклатураШтрихкодРасширеннаяПодсказка" id="62"/>
+					<Events>
+						<Event name="OnChange">ОтсканированнаяНоменклатураШтрихкодПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтсканированнаяНоменклатураАртикул" id="63">
+					<DataPath>Объект.ОтсканированнаяНоменклатура.Артикул</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтсканированнаяНоменклатураАртикулКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="ОтсканированнаяНоменклатураАртикулРасширеннаяПодсказка" id="65"/>
+					<Events>
+						<Event name="OnChange">ОтсканированнаяНоменклатураАртикулПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтсканированнаяНоменклатураНоменклатура" id="66">
+					<DataPath>Объект.ОтсканированнаяНоменклатура.Номенклатура</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтсканированнаяНоменклатураНоменклатураКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="ОтсканированнаяНоменклатураНоменклатураРасширеннаяПодсказка" id="68"/>
+				</InputField>
+				<InputField name="ОтсканированнаяНоменклатураХарактеристика" id="69">
+					<DataPath>Объект.ОтсканированнаяНоменклатура.Характеристика</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтсканированнаяНоменклатураХарактеристикаКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="ОтсканированнаяНоменклатураХарактеристикаРасширеннаяПодсказка" id="71"/>
+				</InputField>
+				<InputField name="ОтсканированнаяНоменклатураКоличество" id="72">
+					<DataPath>Объект.ОтсканированнаяНоменклатура.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтсканированнаяНоменклатураКоличествоКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="ОтсканированнаяНоменклатураКоличествоРасширеннаяПодсказка" id="74"/>
+				</InputField>
+				<InputField name="ОтсканированнаяНоменклатураЕдиницаИзмерения" id="75">
+					<DataPath>Объект.ОтсканированнаяНоменклатура.ЕдиницаИзмерения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтсканированнаяНоменклатураЕдиницаИзмеренияКонтекстноеМеню" id="76"/>
+					<ExtendedTooltip name="ОтсканированнаяНоменклатураЕдиницаИзмеренияРасширеннаяПодсказка" id="77"/>
+				</InputField>
+				<InputField name="ОтсканированнаяНоменклатураКоличествоБрака" id="78">
+					<DataPath>Объект.ОтсканированнаяНоменклатура.КоличествоБрака</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтсканированнаяНоменклатураКоличествоБракаКонтекстноеМеню" id="79"/>
+					<ExtendedTooltip name="ОтсканированнаяНоменклатураКоличествоБракаРасширеннаяПодсказка" id="80"/>
+				</InputField>
+				<InputField name="ОтсканированнаяНоменклатураПричинаБрака" id="81">
+					<DataPath>Объект.ОтсканированнаяНоменклатура.ПричинаБрака</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтсканированнаяНоменклатураПричинаБракаКонтекстноеМеню" id="82"/>
+					<ExtendedTooltip name="ОтсканированнаяНоменклатураПричинаБракаРасширеннаяПодсказка" id="83"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.РабочееМестоКладовщикаОбновленное</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ИспользоватьПодключаемоеОборудование" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать подключаемое оборудование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьСоглашениеСПоставщиками" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать соглашение с поставщиками</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрыУказанияСерий" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры указания серий</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ПоддерживаемыеТипыПодключаемогоОборудования" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поддерживаемые типы подключаемого оборудования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СкладГруппа" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склад группа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Склады" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склады</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Организации" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СкладОтправитель" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склад отправитель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Распоряжение" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распоряжение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.ПеремещениеТоваров</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СкопироватьСписокОжидаемойНоменклатуры" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать список ожидаемой номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать список ожидаемой номенклатуры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СкопироватьСписокОжидаемойНоменклатуры</Action>
+		</Command>
+		<Command name="ЗаполнитьКоличествоБрака" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить количество брака</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить количество брака</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьКоличествоБрака</Action>
+		</Command>
+		<Command name="ЗаполнитьПричинуБрака" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить причину брака</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить причину брака</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПричинуБрака</Action>
+		</Command>
+		<Command name="ПодтвердитьПриемТоваров" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подтвердить прием товаров</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подтвердить прием товаров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодтвердитьПриемТоваров</Action>
+		</Command>
+	</Commands>
+</Form>

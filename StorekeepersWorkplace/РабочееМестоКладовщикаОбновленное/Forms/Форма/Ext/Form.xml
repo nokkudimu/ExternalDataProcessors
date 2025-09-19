@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<SaveDataInSettings>UseList</SaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Реквизиты" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реквизиты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реквизиты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="РеквизитыРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<InputField name="Период" id="3">
+					<DataPath>Объект.Период</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="5"/>
+					<Events>
+						<Event name="OnChange">ПериодПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Организация" id="6">
+					<DataPath>Объект.Организация</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="8"/>
+					<Events>
+						<Event name="OnChange">ОрганизацияПриИзменении</Event>
+						<Event name="StartChoice">ОрганизацияНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="Склад" id="9">
+					<DataPath>Объект.Склад</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СкладКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="11"/>
+					<Events>
+						<Event name="OnChange">СкладПриИзменении</Event>
+						<Event name="StartChoice">СкладНачалоВыбора</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="РасходныеОрдера" id="12">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.РасходныеОрдера</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="РасходныеОрдераКонтекстноеМеню" id="13"/>
+			<AutoCommandBar name="РасходныеОрдераКоманднаяПанель" id="14">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="РасходныеОрдераПерезаполнитьТаблицу" id="49">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПерезаполнитьТаблицу</CommandName>
+						<ExtendedTooltip name="РасходныеОрдераПерезаполнитьТаблицуРасширеннаяПодсказка" id="50"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="РасходныеОрдераРасширеннаяПодсказка" id="15"/>
+			<SearchStringAddition name="РасходныеОрдераСтрокаПоиска" id="16">
+				<AdditionSource>
+					<Item>РасходныеОрдера</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РасходныеОрдераСтрокаПоискаКонтекстноеМеню" id="17"/>
+				<ExtendedTooltip name="РасходныеОрдераСтрокаПоискаРасширеннаяПодсказка" id="18"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="РасходныеОрдераСостояниеПросмотра" id="19">
+				<AdditionSource>
+					<Item>РасходныеОрдера</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РасходныеОрдераСостояниеПросмотраКонтекстноеМеню" id="20"/>
+				<ExtendedTooltip name="РасходныеОрдераСостояниеПросмотраРасширеннаяПодсказка" id="21"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="РасходныеОрдераУправлениеПоиском" id="22">
+				<AdditionSource>
+					<Item>РасходныеОрдера</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="РасходныеОрдераУправлениеПоискомКонтекстноеМеню" id="23"/>
+				<ExtendedTooltip name="РасходныеОрдераУправлениеПоискомРасширеннаяПодсказка" id="24"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">РасходныеОрдераВыбор</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="РасходныеОрдераНомерСтроки" id="25">
+					<DataPath>Объект.РасходныеОрдера.LineNumber</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РасходныеОрдераНомерСтрокиКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="РасходныеОрдераНомерСтрокиРасширеннаяПодсказка" id="27"/>
+				</LabelField>
+				<InputField name="РасходныеОрдераНомер" id="28">
+					<DataPath>Объект.РасходныеОрдера.Номер</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РасходныеОрдераНомерКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="РасходныеОрдераНомерРасширеннаяПодсказка" id="30"/>
+				</InputField>
+				<InputField name="РасходныеОрдераДата" id="31">
+					<DataPath>Объект.РасходныеОрдера.Дата</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РасходныеОрдераДатаКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="РасходныеОрдераДатаРасширеннаяПодсказка" id="33"/>
+				</InputField>
+				<InputField name="РасходныеОрдераРасходныйОрдер" id="34">
+					<DataPath>Объект.РасходныеОрдера.РасходныйОрдер</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РасходныеОрдераРасходныйОрдерКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="РасходныеОрдераРасходныйОрдерРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<InputField name="РасходныеОрдераСкладОтправитель" id="37">
+					<DataPath>Объект.РасходныеОрдера.СкладОтправитель</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РасходныеОрдераСкладОтправительКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="РасходныеОрдераСкладОтправительРасширеннаяПодсказка" id="39"/>
+				</InputField>
+				<InputField name="РасходныеОрдераВидЦены" id="40">
+					<DataPath>Объект.РасходныеОрдера.ВидЦены</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РасходныеОрдераВидЦеныКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="РасходныеОрдераВидЦеныРасширеннаяПодсказка" id="42"/>
+				</InputField>
+				<InputField name="РасходныеОрдераОрганизация" id="43">
+					<DataPath>Объект.РасходныеОрдера.Организация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РасходныеОрдераОрганизацияКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="РасходныеОрдераОрганизацияРасширеннаяПодсказка" id="45"/>
+				</InputField>
+				<InputField name="РасходныеОрдераОтветственный" id="46">
+					<DataPath>Объект.РасходныеОрдера.Ответственный</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РасходныеОрдераОтветственныйКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="РасходныеОрдераОтветственныйРасширеннаяПодсказка" id="48"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.РабочееМестоКладовщикаОбновленное</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.Организация</Field>
+				<Field>Объект.Период</Field>
+				<Field>Объект.Склад</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПерезаполнитьТаблицу" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перезаполнить таблицу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перезаполнить таблицу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПерезаполнитьТаблицу</Action>
+		</Command>
+	</Commands>
+</Form>
